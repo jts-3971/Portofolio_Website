@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header .web_logo {
+  margin: 0;
+  font-size: 2em;
+}
+
+header .page_links {
+  margin: 20px 0;
+}
+
+header .page_links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+header .page_links a:hover {
+  text-decoration: underline;
+}
+
+header .change_background {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+header .change_background:hover {
+  background-color: #777;
+}
+
+.main_content {
+  padding: 20px;
+}
+
+.about_me {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.about_me h2 {
+  margin-top: 0;
+}
+
+.about_me p {
+  margin: 10px 0;
+}
+.portraits {
+  display:inline-flexbox;
+  justify-content:space-around;
+  /* width: 80%; */
+  margin-top: 20px;
+}
+
+.portraits img {
+  max-width: 30%;
+  height: auto;
+  flex-grow: 1;
+}
+.projects {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Maximum width */
+  margin: 20px auto; /* Center the element */
+  text-align: center; /* Center align text */
+}
+
+.projects strong {
+  font-size: 1.5em; /* Larger font size for the title */
+  color: #333; /* Darker text color for contrast */
+  margin-bottom: 10px; /* Space below the title */
+  display: block; /* Make it a block element */
+}
+
+.projects ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.projects li {
+  background-color: #ffffff; /* White background for each item */
+  margin: 10px 0; /* Space between items */
+  padding: 15px; /* Padding inside each item */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 1.2em; /* Slightly larger font size */
+  color: #555; /* Medium gray text color */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.projects li:hover {
+  transform: translateY(-5px); /* Slightly lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: #333;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
